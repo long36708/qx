@@ -55,7 +55,7 @@ if (url.indexOf(validateUrl) != -1) {
     longmo666.subscriber.subscriptions[(appid)] = data
     longmo666.subscriber.entitlements[(name)] = JSON.parse(JSON.stringify(data));
     longmo666.subscriber.entitlements[(name)].product_identifier = (appid);
-    longmo.body = JSON.stringify(py997);
+    longmo.body = JSON.stringify(longmo666);
 }
 console.log(JSON.stringify(longmo))
 $done(longmo);
