@@ -7,6 +7,8 @@
  更新时间：2024-9-22
  使用声明：此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
  https://airpurchase.airapps.co:43002/v1/firstrunV2
+
+ https://pushserv.airapps.co:6001/firstrunV2
  *******************************
 
 
@@ -16,7 +18,8 @@
 
  ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/long36708/qx/refs/heads/main/scripts/finderbot.js
 
- ^https?:\/\/airpurchase.airapps\.co\/.+\/v1/(firstrunV2|validate-receipt) url script-response-body https://raw.githubusercontent.com/long36708/qx/refs/heads/main/scripts/finderbot.js
+ ^https?:\/\/airpurchase.airapps\.co\/.+\/v1/(firstrunV2|validate-receipt|purchase) url script-response-body https://raw.githubusercontent.com/long36708/qx/refs/heads/main/scripts/finderbot.js
+ ^https?:\/\/pushserv.airapps\.co\/.+\/(firstrunV2|validate-receipt) url script-response-body https://raw.githubusercontent.com/long36708/qx/refs/heads/main/scripts/finderbot.js
  [mitm]
 
  hostname = api.revenuecat.com, airpurchase.airapps.co
@@ -25,7 +28,7 @@
 const longmo = {};
 const longmo666 = JSON.parse(typeof $response != "undefined" && $response.body || null);
 
-const name = "Pro";
+const name = "premium";
 const appid = "co.airapps.finderbot.year";
 
 var url = $request.url;
