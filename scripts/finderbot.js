@@ -12,11 +12,11 @@
 
  [rewrite_local]
 
- ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/long36708/qx/main/scripts/fonderbot.js
+ ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/long36708/qx/refs/heads/main/scripts/finderbot.js
 
- ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/long36708/qx/main/scripts/fonderbot.js
+ ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/long36708/qx/refs/heads/main/scripts/finderbot.js
 
- https://airpurchase.airapps.co\/.+\/v1/(firstrunV2|validate-receipt) url script-response-body https://raw.githubusercontent.com/long36708/qx/main/scripts/fonderbot.js
+ https://airpurchase.airapps.co\/.+\/v1/(firstrunV2|validate-receipt) url script-response-body https://raw.githubusercontent.com/long36708/qx/refs/heads/main/scripts/finderbot.js
  [mitm]
 
  hostname = api.revenuecat.com, airpurchase.airapps.co
